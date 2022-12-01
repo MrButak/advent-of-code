@@ -1,7 +1,8 @@
-// Load the text file into memory
-// Loop through all of the numbers, adding them together
-// When reaching a blank line, take the previous total and add to an Object or Array
-// Find the largest number in the Object/Array
+// Find the largest number in the Array, 
+//      push it to another Array
+//      remove the Number from the first Array
+//      Continue 3 times
+// Sum up the 3 numbers in the new Array
 
 const fs = require('fs');
 
@@ -20,3 +21,5 @@ textFile.split('\n').forEach((line) => {
 
 // 69626
 let mostCalories = Math.max(...totalCaloriesArray);
+
+console.log(mostCalories);
